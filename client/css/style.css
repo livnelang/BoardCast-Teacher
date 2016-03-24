@@ -1,0 +1,19 @@
+body {
+    background-image: url('../img/teacher_back.png');
+}
+.form-wrapper {
+    margin:0px auto;
+    width:60%;
+    margin-top: 200px;
+}
+.login {
+    background-image: url('../img/boardcast.png');
+    background-size: contain;
+    box-shadow: 10px 10px 5px #888888;
+}
+.form-group:first-child {
+    padding-top: 30px;
+}
+.submit_group {
+    padding-bottom: 30px;
+}

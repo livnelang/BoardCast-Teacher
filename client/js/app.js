@@ -28,5 +28,10 @@ app.config(function($stateProvider, $urlRouterProvider)  {
             templateUrl: '../views/login.html',
             controller: 'loginCtrl',
         })
+        .state('admin', {
+            url: '/admin',
+            templateUrl: '../views/admin.html',
+            controller: 'adminCtrl',
+        })
 
 });

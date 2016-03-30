@@ -16,7 +16,7 @@ module.exports = function() {
 
 
     // Load the routing files
-    //require('../app/routes/tests.routes.js')(app);
+    require('../app/routes/teachers.routes.js')(app);
     //require('../app/routes/base64.routes.js')(app);
     //require('../app/routes/images.routes.js')(app);
 

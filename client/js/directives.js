@@ -1,3 +1,67 @@
-/**
- * Created by Livne on 26/03/2016.
- */
+/******************************
+ *
+ * Header
+ *
+ ******************************/
+app.directive('adminHeader',function(){
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'templates/admin-header.html',
+    };
+});
+
+
+/******************************
+ *
+ * Sidebar
+ *
+ ******************************/
+app.directive('adminSidebar',function(){
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'templates/admin-sidebar.html',
+        compile: function(tElem,attrs) {
+            return function(scope,elem,attrs) {
+
+            };
+        }
+    };
+});
+
+/******************************
+ *
+ * Content
+ *
+ ******************************/
+app.directive('adminContent',function(){
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'templates/admin-content.html',
+        compile: function(tElem,attrs) {
+            return function(scope,elem,attrs) {
+
+            };
+        }
+    };
+});
+
+/******************************
+ *
+ * Footer
+ *
+ ******************************/
+app.directive('adminFooter',function(){
+    return {
+        restrict: 'E',
+        replace: true,
+        templateUrl: 'templates/admin-footer.html',
+        compile: function(tElem,attrs) {
+            return function(scope,elem,attrs) {
+
+            };
+        }
+    };
+});

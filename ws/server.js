@@ -1,7 +1,11 @@
 //Load Dependencies
 var expressJwt = require('express-jwt');
 var jwt = require('jsonwebtoken');
-var express = require('./config/express');
+var express = require('./config/express'),
+    mongoose = require('./config/mongoose');
+
+// Create a new Mongoose connection instance
+var db = mongoose();
 
 // Create a new Express application instance
 var app = express();

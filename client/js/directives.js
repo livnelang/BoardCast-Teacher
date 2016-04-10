@@ -57,6 +57,9 @@ app.directive('adminFooter',function(){
     return {
         restrict: 'E',
         replace: true,
+        scope:{
+            courses :'=',
+        },
         templateUrl: 'templates/admin-footer.html',
         compile: function(tElem,attrs) {
             return function(scope,elem,attrs) {
